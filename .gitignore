@@ -1,0 +1,3 @@
+nvim/autoload/*.old
+nvim/config/plugged
+zsh/.zsh/cache

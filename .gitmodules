@@ -1,0 +1,3 @@
+[submodule "kitty/themes/embark"]
+	path = kitty/themes/embark
+	url = git@github.com:embark-theme/kitty
