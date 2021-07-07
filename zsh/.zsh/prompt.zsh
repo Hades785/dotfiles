@@ -1,3 +1,5 @@
+# Taken from [https://github.com/dmitmel/dotfiles/]
+
 prompt_escape () {
   print -n "${@//\%/%%}"
 }
