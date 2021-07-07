@@ -30,32 +30,27 @@ _perf_timer_stop() {
 
 _perf_timer_start "total"
 
-echo "Loading base zsh options."
+# Load base zsh config.
 _perf_timer_start "init.zsh"
 source "${ZSH_DIR}/init.zsh"
 _perf_timer_stop "init.zsh"
-echo
 
-echo "Loading prompt."
+# Load Dima's prompt.
 _perf_timer_start "prompt.zsh"
 source "${ZSH_DIR}/prompt.zsh"
 _perf_timer_stop "prompt.zsh"
-echo
 
-echo "Program specific initialisation."
+# Load program specific setups.
 _perf_timer_start "setup.zsh"
 source "${ZSH_DIR}/setup.zsh"
 _perf_timer_stop "setup.zsh"
-echo
 
 
-echo "Loading aliases."
+# Load aliases.
 _perf_timer_start "alias.zsh"
 source "${ZSH_DIR}/alias.zsh"
 _perf_timer_stop "alias.zsh"
-echo
 
-echo "Done loading shell."
 _perf_timer_stop "total"
 
 # Autoloads functions.
