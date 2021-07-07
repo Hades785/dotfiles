@@ -1,13 +1,5 @@
 # Program specific setup.
 
-# Kitty terminal {{{
-# Kitty completion
-if [[ "$TERM" == "xterm-kitty" ]]; then
-  kitty + complete setup zsh | source /dev/stdin
-  echo "Loaded Kitty terminal specific setup."
-fi
-# }}}
-
 # Node Version Manager {{{
 # NVM init
 if [[ -s "/usr/share/nvm/init-nvm.sh" ]]; then
