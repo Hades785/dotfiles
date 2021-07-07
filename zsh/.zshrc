@@ -48,11 +48,6 @@ source "${ZSH_DIR}/setup.zsh"
 _perf_timer_stop "setup.zsh"
 echo
 
-echo "Loading custom functions."
-_perf_timer_start "functions.zsh"
-source "${ZSH_DIR}/functions.zsh"
-_perf_timer_stop "functions.zsh"
-echo
 
 echo "Loading aliases."
 _perf_timer_start "alias.zsh"
@@ -63,3 +58,7 @@ echo
 echo "Done loading shell."
 _perf_timer_stop "total"
 
+# Autoloads functions.
+functionsDir="${ZSH_DIR}/functions"
+fpath=( ${functionsDir} "${fpath[@]}" )
+autoload -Uz $functionsDir/*(.:t)
