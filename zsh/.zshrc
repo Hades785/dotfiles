@@ -1,4 +1,5 @@
 export ZSH_DIR="${HOME}/.zsh"
+export ZSH_CACHE_DIR="${ZSH_DIR}/cache"
 
 # Performance taken from [https://github.com/dmitmel/dotfiles/] {{{
 zmodload zsh/datetime
@@ -45,6 +46,10 @@ _perf_timer_start "setup.zsh"
 source "${ZSH_DIR}/setup.zsh"
 _perf_timer_stop "setup.zsh"
 
+# Load Dima's zle setup.
+_perf_timer_start "zle.zsh"
+source "${ZSH_DIR}/zle.zsh"
+_perf_timer_stop "zle.zsh"
 
 # Load aliases.
 _perf_timer_start "alias.zsh"
