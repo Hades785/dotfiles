@@ -2,10 +2,10 @@ function! Tab_num(n) abort
   return a:n." \ue0bb "
 endfunction
 
-" Linghtline config
+" Lightline config
 let g:lightline = {}
 
-let g:lightline.colorscheme = 'embark'
+let g:lightline.colorscheme = 'moedark'
 
 let g:lightline.separator =    { 'left': "\ue0b8 ", 'right': "\ue0be " }
 let g:lightline.subseparator = { 'left': "\ue0b9 ", 'right': "\ue0b9 " }

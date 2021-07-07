@@ -1,4 +1,4 @@
-colorscheme embark
+colorscheme moedark
 
 if &diff
   set wrap
