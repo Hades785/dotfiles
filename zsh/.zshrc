@@ -36,15 +36,21 @@ _perf_timer_start "init.zsh"
 source "${ZSH_DIR}/init.zsh"
 _perf_timer_stop "init.zsh"
 
-# Load Dima's prompt.
-_perf_timer_start "prompt.zsh"
-source "${ZSH_DIR}/prompt.zsh"
-_perf_timer_stop "prompt.zsh"
+# Load plugins.
+_perf_timer_start "plugins.zsh"
+source "${ZSH_DIR}/zplg.zsh"
+source "${ZSH_DIR}/plugins.zsh"
+_perf_timer_stop "plugins.zsh"
 
 # Load program specific setups.
 _perf_timer_start "setup.zsh"
 source "${ZSH_DIR}/setup.zsh"
 _perf_timer_stop "setup.zsh"
+
+# Load aliases.
+_perf_timer_start "alias.zsh"
+source "${ZSH_DIR}/alias.zsh"
+_perf_timer_stop "alias.zsh"
 
 # Load completions.
 _perf_timer_start "completion.zsh"
@@ -61,10 +67,10 @@ _perf_timer_start "zle.zsh"
 source "${ZSH_DIR}/zle.zsh"
 _perf_timer_stop "zle.zsh"
 
-# Load aliases.
-_perf_timer_start "alias.zsh"
-source "${ZSH_DIR}/alias.zsh"
-_perf_timer_stop "alias.zsh"
+# Load Dima's prompt.
+_perf_timer_start "prompt.zsh"
+source "${ZSH_DIR}/prompt.zsh"
+_perf_timer_stop "prompt.zsh"
 
 _perf_timer_stop "total"
 
