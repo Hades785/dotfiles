@@ -36,9 +36,24 @@ _perf_timer_start "init.zsh"
 source "${ZSH_DIR}/init.zsh"
 _perf_timer_stop "init.zsh"
 
+# Load ZPLG.
+_perf_timer_start "zplg.zsh"
+# Download fresh copy of ZPLG regularly (once every two weeks).
+refresh_zplg=1
+for match in "${ZSH_CACHE_DIR}/zplg.zsh"(N.m-14); do
+  refresh_zplg=0
+done; unset match
+if [[ ! $refresh_zplg -eq 0 ]]; then
+  echo "Downloading zplg"
+  curl "https://raw.githubusercontent.com/dmitmel/dotfiles/master/zsh/zplg.zsh" > "${ZSH_CACHE_DIR}/zplg.zsh"
+fi
+unset refresh_zplg
+
+source "${ZSH_CACHE_DIR}/zplg.zsh"
+_perf_timer_stop "zplg.zsh"
+
 # Load plugins.
 _perf_timer_start "plugins.zsh"
-source "${ZSH_DIR}/zplg.zsh"
 source "${ZSH_DIR}/plugins.zsh"
 _perf_timer_stop "plugins.zsh"
 
