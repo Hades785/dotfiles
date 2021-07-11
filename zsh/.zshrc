@@ -1,6 +1,9 @@
 export ZSH_DIR="${HOME}/.zsh"
 export ZSH_CACHE_DIR="${ZSH_DIR}/cache"
 
+# Create cache directory if it doesn't exist.
+[[ ! -d "${ZSH_CACHE_DIR}" ]] && mkdir "${ZSH_CACHE_DIR}"
+
 # Performance (taken from @dmitmel's dotfiles) {{{
 zmodload zsh/datetime
 typeset -A _perf_timers
