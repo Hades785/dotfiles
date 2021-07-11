@@ -1,4 +1,5 @@
-# Taken from [https://github.com/dmitmel/dotfiles/]
+#!/usr/bin/env zsh
+# (taken from @dmitmel's dotfiles)
  
 # http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html
 # http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Zle-Builtins

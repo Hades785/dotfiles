@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # TODO: CLEAN UP!
 # taken from manjaro config {{{
 setopt correct

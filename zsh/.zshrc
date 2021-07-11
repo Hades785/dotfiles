@@ -1,7 +1,7 @@
 export ZSH_DIR="${HOME}/.zsh"
 export ZSH_CACHE_DIR="${ZSH_DIR}/cache"
 
-# Performance taken from [https://github.com/dmitmel/dotfiles/] {{{
+# Performance (taken from @dmitmel's dotfiles) {{{
 zmodload zsh/datetime
 typeset -A _perf_timers
 

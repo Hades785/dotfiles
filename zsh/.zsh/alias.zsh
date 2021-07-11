@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # Clear all aliases
 unalias -a
 

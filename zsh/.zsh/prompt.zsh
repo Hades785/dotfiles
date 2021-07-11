@@ -1,4 +1,5 @@
-# Taken from [https://github.com/dmitmel/dotfiles/]
+#!/usr/bin/env zsh
+# (taken from @dmitmel's dotfiles)
 
 prompt_escape () {
   print -n "${@//\%/%%}"

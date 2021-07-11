@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # extract - archive extractor
 # usage: extract <file>
 function extract
