@@ -46,6 +46,16 @@ _perf_timer_start "setup.zsh"
 source "${ZSH_DIR}/setup.zsh"
 _perf_timer_stop "setup.zsh"
 
+# Load completions.
+_perf_timer_start "completion.zsh"
+source "${ZSH_DIR}/completion.zsh"
+_perf_timer_stop "completion.zsh"
+
+# Load keybindings.
+_perf_timer_start "keybinding.zsh"
+source "${ZSH_DIR}/keybinding.zsh"
+_perf_timer_stop "keybinding.zsh"
+
 # Load Dima's zle setup.
 _perf_timer_start "zle.zsh"
 source "${ZSH_DIR}/zle.zsh"

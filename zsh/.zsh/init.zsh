@@ -133,31 +133,29 @@ add-zsh-hook preexec mzc_termsupport_preexec
 # }}}
 
 # The following lines were added by compinstall
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
-zstyle ':completion:*' rehash true                              # automatically find new executables in path 
-zstyle ':completion:*' accept-exact '*(N)'
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
-zstyle ':completion:*' completer _expand _complete _ignored _approximate
-zstyle ':completion:*' completions 1
-zstyle ':completion:*' expand prefix suffix
-zstyle ':completion:*' glob 1
-zstyle ':completion:*' insert-unambiguous false
-zstyle ':completion:*' list-colors ''
-zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
-zstyle ':completion:*' list-suffixes true
-zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=**' 'm:{[:lower:]}={[:upper:]}'
-zstyle ':completion:*' max-errors 3
-zstyle ':completion:*' menu select=1
-zstyle ':completion:*' original true
-zstyle ':completion:*' preserve-prefix '//[^/]##/'
-zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-zstyle ':completion:*' substitute 1
-zstyle :compinstall filename '/home/fuzuki/.zshrc'
+#zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
+#zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
+#zstyle ':completion:*' rehash true                              # automatically find new executables in path 
+#zstyle ':completion:*' accept-exact '*(N)'
+#zstyle ':completion:*' use-cache on
+#zstyle ':completion:*' cache-path ~/.zsh/cache
+#zstyle ':completion:*' completer _expand _complete _ignored _approximate
+#zstyle ':completion:*' completions 1
+#zstyle ':completion:*' expand prefix suffix
+#zstyle ':completion:*' glob 1
+#zstyle ':completion:*' insert-unambiguous false
+#zstyle ':completion:*' list-colors ''
+#zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+#zstyle ':completion:*' list-suffixes true
+#zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=**' 'm:{[:lower:]}={[:upper:]}'
+#zstyle ':completion:*' max-errors 3
+#zstyle ':completion:*' menu select=1
+#zstyle ':completion:*' original true
+#zstyle ':completion:*' preserve-prefix '//[^/]##/'
+#zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+#zstyle ':completion:*' substitute 1
+#zstyle :compinstall filename '/home/fuzuki/.zshrc'
 
-#autoload -Uz compinit
-#compinit
 # Theming section  
 autoload -U compinit colors zcalc
 compinit -d
@@ -179,17 +177,17 @@ SAVEHIST=100
 setopt autocd nomatch notify
 unsetopt beep
 
-zmodload zsh/terminfo
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey '^[[A' history-substring-search-up			
-bindkey '^[[B' history-substring-search-down
-bindkey '^[Oc' forward-word                                     #
-bindkey '^[Od' backward-word                                    #
-bindkey '^[[1;5D' backward-word                                 #
-bindkey '^[[1;5C' forward-word                                  #
-bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
-bindkey '^[[Z' undo                                             # Shift+tab undo last action
+#zmodload zsh/terminfo
+#bindkey "$terminfo[kcuu1]" history-substring-search-up
+#bindkey "$terminfo[kcud1]" history-substring-search-down
+#bindkey '^[[A' history-substring-search-up			
+#bindkey '^[[B' history-substring-search-down
+#bindkey '^[Oc' forward-word                                     #
+#bindkey '^[Od' backward-word                                    #
+#bindkey '^[[1;5D' backward-word                                 #
+#bindkey '^[[1;5C' forward-word                                  #
+#bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
+#bindkey '^[[Z' undo                                             # Shift+tab undo last action
 #bindkey -v
 # }}}
 
